@@ -1,0 +1,41 @@
+{
+  "dataset_rows": 649,
+  "selection_method": "5-fold CV on training only",
+  "split_seed": 42,
+  "test_fraction": 0.2,
+  "scenarios": [
+    {
+      "scenario": "habits",
+      "selected_model": "ridge",
+      "cv_mae": 2.153725372111528,
+      "test_mae": 2.1568257775064494,
+      "test_rmse": 2.873289305267437,
+      "test_r2": 0.15340116018533834,
+      "train_count": 519,
+      "test_count": 130,
+      "cv_all": {
+        "mean_baseline": 2.4278110462762177,
+        "ridge": 2.153725372111528,
+        "random_forest": 2.2429862729438526,
+        "gradient_boosting": 2.36588355538073
+      }
+    },
+    {
+      "scenario": "history",
+      "selected_model": "ridge",
+      "cv_mae": 0.8306900417496952,
+      "test_mae": 0.7537584761885746,
+      "test_rmse": 1.1821034172976526,
+      "test_r2": 0.8567053744614408,
+      "train_count": 519,
+      "test_count": 130,
+      "cv_all": {
+        "mean_baseline": 2.4278110462762177,
+        "ridge": 0.8306900417496952,
+        "random_forest": 0.8490717858574186,
+        "gradient_boosting": 0.936960844007667
+      }
+    }
+  ],
+  "best_test_scenario_descriptive_only": "history"
+}
